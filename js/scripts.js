@@ -19,10 +19,8 @@ function newItem() {
 
     li.on("dblclick", crossOut);
 
-};
-
     //jQuery of 3(i)
-    let crossOutButton = $('<crossOutButton></crossOutButton')
+    let crossOutButton = $('<crossOutButton></crossOutButton>');
     crossOutButton.append(document.createTextNode('X'));
     li.append(crossOutButton);
 
@@ -32,12 +30,12 @@ function newItem() {
 
     function deleteListItem() {
         li.addClass('delete');
-    };
+    }
 
     // 4. Reordering the items: 
     $('#list').sortable();
     
-
+};
 
 
 
